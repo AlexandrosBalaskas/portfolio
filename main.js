@@ -1,5 +1,6 @@
 const recentprojects = document.querySelector('.recentprojects')
 const downbox = document.querySelector('.down')
+const downbox2 = document.querySelector('.down2')
 
 let boxes = Array.from(document.querySelectorAll('.box'))
 window.addEventListener('scroll',()=>{
@@ -10,10 +11,13 @@ window.addEventListener('scroll',()=>{
             slidebox.style.left = '100%';
             mainbox.style.top = '25%';
             mainbox.style.opacity = '1';
-            }
+        }
     })
     if (downbox.getBoundingClientRect().y - window.innerHeight < - 300){
         downbox.style.top = 0;
+    }
+    if (downbox2.getBoundingClientRect().y - window.innerHeight < - 300){
+        downbox2.style.top = 0;
     }
 })
 boxes.forEach(e =>{

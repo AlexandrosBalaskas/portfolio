@@ -727,6 +727,12 @@ span.red{
 .brochure{
   background-image: linear-gradient(#1c1d25c9,#1c1d25c9),url('images/campus.PNG');
 }
+.interactica{
+  background-image: linear-gradient(#1c1d25c9,#1c1d25c9),url('images/interactica.png');
+}
+.game{
+  background-image: linear-gradient(#3a3e5e99, #9ea0b369),url('images/game.png');
+}
 .pixel50l{
   transform: translateX(calc(-50% - 20px));
 }
@@ -823,6 +829,11 @@ span.red{
   top: -60px;
   transition: 0.3s ease-in-out;
 }
+.down2{
+  position: relative;
+  top: -60px;
+  transition: 0.3s ease-in-out;
+}
 .recentprojects{
   overflow: hidden;
   display: inline-block;
@@ -832,8 +843,10 @@ span.red{
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 70px;
   margin-bottom: 100px;
+}
+.mt-70{
+  margin-top: 70px;
 }
 span.redd{
   font-family: 'Montserrat', sans-serif;
@@ -851,6 +864,10 @@ span.redd{
 }
 .details .image{
   width: 120px;
+  height: 50px;
+}
+.details .image2{
+  width: 180px;
   height: 50px;
 }
 .mainbox h4{
