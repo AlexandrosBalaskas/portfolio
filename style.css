@@ -393,8 +393,8 @@ html,body{
   display: none;
 }
 .about-me{
-  width: 550px;
-  height: 550px;
+  width: 610px;
+  height: 610px;
   background-color: #ebebeb;
 }
 @media(max-width:1100px){
@@ -472,8 +472,8 @@ span.red{
   font-weight: bolder;
 }
 .about-you{
-  width: 550px;
-  height: 550px;
+  width: 610px;
+  height: 610px;
   background-color: #1c1d25;
 }
 @media(max-width:1100px){
@@ -546,6 +546,7 @@ span.red{
   font-size: 15px;
   box-shadow: 0 0 4px tomato;
   color: white;
+  height: 45px;
   letter-spacing: 1px;
   margin-top: 30px;
   margin-left: 14%;
@@ -561,7 +562,7 @@ span.red{
 }
 @keyframes goUp {
   0%{
-      transform: translateY(550px);
+      transform: translateY(610px);
   }
   100%{
       transform: translateY(0px);
@@ -569,7 +570,7 @@ span.red{
 }
 @keyframes goDown {
   0%{
-      transform: translateY(-550px);
+      transform: translateY(-610px);
   }
   100%{
       transform: translateY(0px);
@@ -581,7 +582,7 @@ span.red{
       opacity: 1;
   }
   100%{
-      transform: translateY(-550px);
+      transform: translateY(-610px);
       opacity: 0;
   }
 }
@@ -591,7 +592,7 @@ span.red{
       opacity: 1;
   }
   100%{
-      transform: translateY(550px);
+      transform: translateY(610px);
       opacity: 0;
   }
 }
