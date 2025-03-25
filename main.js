@@ -154,36 +154,25 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     submitBtn.disabled = true;
     loadingIcon.style.display = 'block';
 
-    const formData = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      message: document.getElementById('message').value,
-      _captcha: false,
-    };
-
-    // Make the POST request
-    fetch('https://formsubmit.co/alexbalaskasgr@gmail.com', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
+    const params = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+      };
+  
+    emailjs.send('service_r6b46te','template_3c919qf',params)
     .then(response => {
-        submitBtn.disabled = false; // Enable button
-      loadingIcon.style.display = 'none'; // Hide loading icon
-      if (response.ok) {
-        submitBtn.disabled = false; // Enable button
-      loadingIcon.style.display = 'none'; // Hide loading icon
+        submitBtn.disabled = false; 
+        loadingIcon.style.display = 'none'; 
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
         buttonn.click();
         alert('Message sent successfully!')
-      } else {
-        alert('Message not sent')
-      }
     })
     .catch(error => {
-        submitBtn.disabled = false; // Enable button
-      loadingIcon.style.display = 'none'; // Hide loading icon
+        submitBtn.disabled = false; 
+      loadingIcon.style.display = 'none'; 
         alert('Error: ',error)
       console.error('Error:', error);
     });

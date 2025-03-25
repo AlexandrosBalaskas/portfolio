@@ -720,13 +720,16 @@ span.red{
   }
 }
 .store{
-  background-image: linear-gradient(#1c1d25c9,#1c1d25c9),url('images/store.PNG');
+  background-image: linear-gradient(#1c1d25c9,#1c1d25c9),url('images/arkouda.png');
 }
 .movie{
   background-image: linear-gradient(#1c1d25c9,#1c1d25c9),url('images/movie.PNG');
 }
 .brochure{
-  background-image: linear-gradient(#1c1d25c9,#1c1d25c9),url('images/campus.PNG');
+  background-image: linear-gradient(#1c1d25c9,#1c1d25c9),url('images/nuxt.png');
+}
+.textRec{
+  background-image: linear-gradient(#1c1d25c9,#1c1d25c9),url('images/reactNat.png');
 }
 .interactica{
   background-image: linear-gradient(#1c1d25c9,#1c1d25c9),url('images/interactica.png');
@@ -863,6 +866,10 @@ span.redd{
   width: 200px;
   height: 50px;
 }
+.details .image150{
+  width: 50px;
+  height: 50px;
+}
 .details .image{
   width: 120px;
   height: 50px;
@@ -906,6 +913,10 @@ span.redd{
     width: 140px;
     height: 40px;
   }
+  .details .image150{
+    width: 40px;
+    height: 40px;
+  }
   .details .image{
     width: 80px;
     height: 35px;
@@ -931,6 +942,10 @@ span.redd{
   }
   .details .image250{
     width: 100px;
+    height: 25px;
+  }
+  .details .image150{
+    width: 25px;
     height: 25px;
   }
   .details .image{
